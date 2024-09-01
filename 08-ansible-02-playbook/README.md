@@ -27,3 +27,11 @@
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
 
 ---
+поменял inventory  файл
+![1](https://github.com/oviplokos/mnt-homeworks/blob/main/08-ansible-02-playbook/playbook/img/ansible_2_1.png)
+
+исправил ошибки 
+![1](https://github.com/oviplokos/mnt-homeworks/blob/main/08-ansible-02-playbook/playbook/img/ansible_2_2.png)
+
+проверил плейбук с флагом --diff
+![1](https://github.com/oviplokos/mnt-homeworks/blob/main/08-ansible-02-playbook/playbook/img/ansible_2_3.png)
