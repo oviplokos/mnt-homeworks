@@ -33,8 +33,29 @@
 
 ---
 
-### Как оформить решение задания
+Запуск первой сборки прошёл успешно:
 
-Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
+![1](https://github.com/oviplokos/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/teamcity_1_1.png)
 
----
+Файл [pom.xml](https://github.com/oviplokos/example-teamcity/blob/master/pom.xml) изменён для загрузки артефакта на стадии deploy (в файле [settings.xml](https://github.com/oviplokos/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/teamcity/settings.xml) указаны параметры для входа.
+
+Настроены два шага: `maven clean deploy` и `maven clean test`, запускающиеся в зависимости от используемой ветки:
+
+![2](https://github.com/oviplokos/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/teamcity_1_2.png)
+
+Артефакт успешно загружен:
+
+![3](https://github.com/oviplokos/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/teamcity_1_3.png)
+
+
+
+В репозиторий добавлены обновления в ветке https://github.com/oviplokos/example-teamcity/tree/feature/add_reply <br/>
+Тесты запустились автоматически и прошли успешно:
+
+![4](https://github.com/oviplokos/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/teamcity_1_4.png)
+
+Сливаем ветки, публикуем, меняем версию артефакта, всё работает, jar на месте
+
+![5](https://github.com/oviplokos/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/teamcity_1_5.png)
+
+![6](https://github.com/oviplokos/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/teamcity_1_6.png)
