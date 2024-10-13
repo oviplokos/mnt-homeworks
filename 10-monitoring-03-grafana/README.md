@@ -1,4 +1,4 @@
-# Домашнее задание к занятию 14 «Средство визуализации Grafana»
+![image](https://github.com/user-attachments/assets/e4d951b6-b80d-4bf8-a6f0-d32f35dbe364)# Домашнее задание к занятию 14 «Средство визуализации Grafana»
 
 ## Задание повышенной сложности
 
@@ -26,6 +26,7 @@
 1. Подключите поднятый вами prometheus, как источник данных.
 1. Решение домашнего задания — скриншот веб-интерфейса grafana со списком подключенных Datasource.
 
+![1]()
 ## Задание 2
 
 Изучите самостоятельно ресурсы:
@@ -43,10 +44,16 @@
 
 Для решения этого задания приведите promql-запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
 
+100 - (avg by(instance) (rate(node_cpu_seconds_total{job="node_exporter", mode="idle"}[1m])) * 100)
+node_load1{instance="node_exporter:9100"} node_load5{instance="node_exporter:9100"} node_load15{instance="node_exporter:9100"}
+(node_memory_MemTotal_bytes{job="node_exporter"} * 100) - node_memory_MemFree_bytes{job="node_exporter"} / node_memory_MemTotal_bytes
+node_filesystem_avail_bytes{fstype!~"tmpfs|fuse.lxcfs|squashfs"} / node_filesystem_size_bytes{fstype!~"tmpfs|fuse.lxcfs|squashfs"} * 100
+![2]()
 ## Задание 3
 
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
 1. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
+![3]()
 
 ## Задание 4
 
