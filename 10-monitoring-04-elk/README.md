@@ -44,6 +44,8 @@ Filebeat следует сконфигурировать для отправки
 - docker-compose манифест (если вы не использовали директорию help);
 - ваши yml-конфигурации для стека (если вы не использовали директорию help).
 
+![1](https://github.com/oviplokos/mnt-homeworks/blob/main/10-monitoring-04-elk/mon_3_1.png)
+![2](https://github.com/oviplokos/mnt-homeworks/blob/main/10-monitoring-04-elk/mon_3_3.png)
 ## Задание 2
 
 Перейдите в меню [создания index-patterns  в kibana](http://localhost:5601/app/management/kibana/indexPatterns/create) и создайте несколько index-patterns из имеющихся.
@@ -54,6 +56,8 @@ Filebeat следует сконфигурировать для отправки
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
  
 ---
+![3](https://github.com/oviplokos/mnt-homeworks/blob/main/10-monitoring-04-elk/mon_3_2.png)
+
 
 ### Как оформить решение задания
 
